@@ -177,7 +177,8 @@
 
 .terminal-body {
   padding: 32px 42px 40px;
-  min-height: 520px;
+  height: calc(100vh - 280px);
+  min-height: 500px;
   font-size: 1.02rem;
   line-height: 2.3;
   color: #c9d1d9;

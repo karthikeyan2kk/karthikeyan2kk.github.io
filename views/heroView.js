@@ -18,10 +18,6 @@ export function render() {
             </div>
             <div class="terminal-body" id="terminalBody"></div>
           </div>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#about"    class="btn btn-outline">About Me</a>
-          </div>
         </div>
       </div>
       <div class="hero-scroll" aria-hidden="true"></div>
