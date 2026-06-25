@@ -9,7 +9,7 @@ export function render(projects) {
           <span class="project-folder">${icons.folder}</span>
           <div class="project-links">
             <a href="${p.link}" target="_blank" rel="noopener" title="View on GitHub">${icons.github}</a>
-            <a href="${p.link}" target="_blank" rel="noopener" title="External link">${icons.externalLink}</a>
+            ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener" title="Live demo">${icons.externalLink}</a>` : ''}
           </div>
         </div>
         <h3 class="project-title">${p.title}</h3>

@@ -80,18 +80,29 @@ export function initContactController() {
       return;
     }
 
-    console.log('Contact form submitted:', { name, email, subject, message });
-
     const submitBtn = form.querySelector('.form-submit');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending…';
 
-    // Simulate async send
-    setTimeout(() => {
+    emailjs.init('0JnVu7GlUJG52TEE3');
+
+    emailjs.send('service_0k1y542', 'template_by6dimm', {
+      from_name:    name,
+      from_email:   email,
+      subject:      subject,
+      message:      message,
+      reply_to:     email,
+    })
+    .then(() => {
       form.reset();
       submitBtn.disabled = false;
       submitBtn.innerHTML = `Send Message <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>`;
-      showToast('Message sent! I\'ll get back to you soon.', 'success');
-    }, 900);
+      showToast("Message sent! I'll get back to you soon.", 'success');
+    })
+    .catch(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = `Send Message <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>`;
+      showToast('Something went wrong. Please email me directly.', 'error');
+    });
   });
 }

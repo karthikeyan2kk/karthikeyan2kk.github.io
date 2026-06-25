@@ -68,6 +68,22 @@ export const portfolioData = {
       tech: ["PyTorch", "ResNet-18", "Streamlit", "Grad-CAM", "Albumentations"],
       link: "https://github.com/karthikeyan2kk",
     },
+    {
+      title: "Flavor Bridge",
+      description:
+        "AI-powered culinary compass that maps a user's personalized flavor DNA to recommend the best global cuisine alternatives for familiar dishes. Fully conceptualized, built, and deployed in 45 minutes.",
+      tech: ["Python", "AI/ML", "Streamlit", "NLP"],
+      link: "https://github.com/karthikeyan2kk",
+      demo: "https://taste-bridge-labs.base44.app/",
+    },
+    {
+      title: "Chi360 — Chicago City Platform",
+      description:
+        "Decentralized 6-pillar platform (Markets, Skyline, Atmos, Living, Discover, Transit) capturing Chicago's pulse across transit, housing, air quality, and more. Built collaboratively in 48 hours with a scalable full-stack architecture.",
+      tech: ["React", "Node.js", "Express", "Supabase"],
+      link: "https://github.com/karthikeyan2kk",
+      demo: "https://www.youtube.com/watch?v=EHFtcalkXnI",
+    },
   ],
   experience: [
     {
@@ -96,6 +112,15 @@ export const portfolioData = {
       points: [
         "Engineered IBM DataStage ETL workflows with multi-stage parallel jobs loading 1M+ records into a centralized data warehouse, reducing pipeline processing time by 30%.",
         "Optimized RESTful API endpoints by rewriting high-latency SQL joins as indexed subqueries, reducing average API response time by 18% across Agile sprints.",
+      ],
+    },
+    {
+      role: "Project Engineer Intern",
+      company: "Wipro",
+      duration: "Mar 2022 – May 2022",
+      points: [
+        "Gained hands-on experience in .NET development (C# and ASP.NET) through code debugging and legacy refactoring; implemented a secure login system with role-based authentication, reducing unauthorized access attempts by 95%.",
+        "Developed a full-featured bank website with user registration, account management, and transaction processing modules, achieving a 40% improvement in user experience.",
       ],
     },
   ],

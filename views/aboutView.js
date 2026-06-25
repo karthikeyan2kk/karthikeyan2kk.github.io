@@ -51,12 +51,12 @@ export function render(data) {
             <p class="about-bio">${data.about}</p>
             <div class="about-stats stagger">
               <div class="stat-box">
-                <div class="stat-number" data-target="3" data-suffix="+">0+</div>
-                <div class="stat-label">Internship Roles</div>
+                <div class="stat-number" data-target="4" data-suffix="+">0+</div>
+                <div class="stat-label">Work Experiences</div>
               </div>
               <div class="stat-box">
-                <div class="stat-number" data-target="4" data-suffix="">0</div>
-                <div class="stat-label">Data Projects</div>
+                <div class="stat-number" data-target="12" data-suffix="+">0+</div>
+                <div class="stat-label">Projects Built</div>
               </div>
               <div class="stat-box">
                 <div class="stat-number" data-target="92" data-suffix="%">0%</div>
